@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed;
     private Rigidbody2D myRigidbody;
 
-    // Use this for initialization
+
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
@@ -24,4 +24,9 @@ public class PlayerController : MonoBehaviour
         myRigidbody.velocity = movement;
 
     }
+
+    void Update() {
+
+    }
+
 }
