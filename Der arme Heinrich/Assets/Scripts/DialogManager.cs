@@ -12,8 +12,8 @@ public class DialogManager : MonoBehaviour {
     public int currentLine;
 	// Use this for initialization
 	void Start () {
-	    
-	}
+        
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -30,7 +30,7 @@ public class DialogManager : MonoBehaviour {
         {
             dBox.SetActive(false);
             dialogActive = false;
-
+            
             currentLine = 0;
         }
 

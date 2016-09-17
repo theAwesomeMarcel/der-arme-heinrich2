@@ -8,6 +8,8 @@ public class dialogHolder : MonoBehaviour {
 
     public string[] dialogueLines;
 
+    
+
 	// Use this for initialization
 	void Start () {
         dMan = FindObjectOfType<DialogManager>();
@@ -28,8 +30,10 @@ public class dialogHolder : MonoBehaviour {
                 //dMan.ShowBox(dialogue);
 
                 if (!dMan.dialogActive)
-                {
+                {   
+                   
                     dMan.dialogLines = dialogueLines;
+                    
                     dMan.currentLine = 0;
                     dMan.showDialog();
                 }
@@ -39,4 +43,6 @@ public class dialogHolder : MonoBehaviour {
         }
 
     }
+
+
 }
