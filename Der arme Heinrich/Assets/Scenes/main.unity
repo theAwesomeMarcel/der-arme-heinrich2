@@ -680,7 +680,17 @@ MonoBehaviour:
   dBox: {fileID: 1495420351}
   dText: {fileID: 1173173788}
   dialogActive: 0
-  dialogLines: []
+  dialogLines:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   currentLine: 0
 --- !u!1 &777742608
 GameObject:
