@@ -6,35 +6,46 @@ public class DialogManager : MonoBehaviour {
     public GameObject dBox;
     public Text dText;
 
+
+
     public bool dialogActive;
+
+    public bool[] permissionSzene;
+    public int szenenStelle;
 
     public string[] dialogLines;
     public int currentLine;
 	// Use this for initialization
 	void Start () {
-	    
-	}
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
 
-        if (dialogActive && Input.GetKeyDown(KeyCode.Space)) 
-        {
-            //dBox.SetActive(false);
-            //dialogActive = false;
+        // ---> nur bei aktiver Quest Dialog erlauben
 
-            currentLine++;
-        }
+            if (dialogActive && Input.GetKeyDown(KeyCode.Space))
+            {
+                //dBox.SetActive(false);
+                //dialogActive = false;
+                
+                currentLine++;
+                
+                
+            }
 
-        if(currentLine >= dialogLines.Length)
-        {
-            dBox.SetActive(false);
-            dialogActive = false;
+            if (currentLine >= dialogLines.Length)
+            {
+                dBox.SetActive(false);
+                dialogActive = false;
+                currentLine = 0;
+            }
 
-            currentLine = 0;
-        }
+            dText.text = dialogLines[currentLine];
 
-        dText.text = dialogLines[currentLine];
+        
+        
     }
 
     public void ShowBox(string dialogue)
