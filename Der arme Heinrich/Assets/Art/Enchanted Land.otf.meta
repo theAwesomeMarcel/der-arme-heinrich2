@@ -1,6 +1,10 @@
 fileFormatVersion: 2
 guid: 56125a62682ea41469fda074eb7634b3
+<<<<<<< HEAD
+timeCreated: 1474201434
+=======
 timeCreated: 1474203684
+>>>>>>> refs/remotes/origin/master
 licenseType: Free
 TrueTypeFontImporter:
   serializedVersion: 4
