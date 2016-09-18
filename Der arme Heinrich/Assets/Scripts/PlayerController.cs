@@ -40,6 +40,15 @@ public class PlayerController : MonoBehaviour
         Vector2 movement = new Vector2(moveSpeed * moveHorizontal, 0.0f);
 
         myRigidbody.velocity = movement;
+
+        if (GetComponent<Rigidbody2D>().velocity.x > 0)
+        {
+            transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+        }
+        else if (GetComponent<Rigidbody2D>().velocity.x < 0)
+        {
+            transform.localScale = new Vector3(-0.5f, 0.5f, 0.5f);
+        }
     }
 
 }
