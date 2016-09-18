@@ -90,6 +90,70 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &36853015
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 36853016}
+  - 61: {fileID: 36853018}
+  - 114: {fileID: 36853017}
+  m_Layer: 0
+  m_Name: Szene7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &36853016
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 36853015}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 230295076}
+  m_RootOrder: 3
+--- !u!114 &36853017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 36853015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a1b1f86712ea244943dd893f9d9b1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: 
+  dialogueLines:
+  - 'Curt: "Was ist geschehen? Wieso siehst du so schlecht aus, Heinrich?'
+  - 'Heinrich: Mein Gott, wieso hast du mich verlassen!'
+  - 'Curt: Beruhige dich doch.'
+  - 'Heinrich: Ich wurde von Gott gestraft, Curt. Er hat mich mit dem Aussatz belegt.'
+  - "Curt: Oh nein! Lass uns schnell nach Hause gehen und planen, was wir als n\xE4chstes
+    machen k\xF6nnen."
+  idSzene: 7
+--- !u!61 &36853018
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 36853015}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1 &36945777
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,8 +341,6 @@ GameObject:
   - 33: {fileID: 230295075}
   - 23: {fileID: 230295074}
   - 61: {fileID: 230295073}
-  - 114: {fileID: 230295078}
-  - 114: {fileID: 230295077}
   m_Layer: 0
   m_Name: Cnut
   m_TagString: Untagged
@@ -292,10 +354,10 @@ BoxCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 230295072}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
@@ -346,50 +408,13 @@ Transform:
   m_LocalPosition: {x: -6.56, y: -0.21000004, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
+  m_Children:
+  - {fileID: 1274974694}
+  - {fileID: 1939792581}
+  - {fileID: 1883860174}
+  - {fileID: 36853016}
   m_Father: {fileID: 634167471}
   m_RootOrder: 0
---- !u!114 &230295077
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 230295072}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e20b5ff0eb5018243a5903fd11a83752, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questNumber: 1
-  startQuest: 0
-  endQuest: 1
---- !u!114 &230295078
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 230295072}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8a1b1f86712ea244943dd893f9d9b1a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: 
-  dialogueLines:
-  - "Heinrich: Curt, was f\xFCr ein sch\xF6ner Tag. Ich sollte mich unters Volk mischen
-    und schauen, wie es um meine Untertanen bestellt ist."
-  - 'Curt: Eine gute Idee. Da du schon auf dem Weg bist, schau doch bei Ritter Hartmut
-    vorbei. Er hat sich erdreistet, dir deine gerechte Steuer vorzuenthalten.'
-  - "Heinrich: Was f\xE4llt ihm ein! Ich werde ein Wort mit ihm reden."
-  - "Curt: Ihm gef\xE4llt anscheinend nicht, dass du vorhast die Kirche auszubauen,
-    bevor die Br\xFCcke Richtung S\xFCden vollst\xE4ndig repariert wurde."
-  - 'Curt: Mir wurde berichtet, dass gestern ein hitziger Kampf zwischen Hartmut und
-    dem Dorfpriester entbrannt ist.'
-  - "Heinrich: Ich werde wohl mit den beiden reden m\xFCssen und einen Kompromiss
-    finden, damit wieder Ruhe in meinem Land herrschen kann."
-  - "Curt: Viel Erfolg dabei! Ich hab\u2019 selten zwei so sture Menschen getroffen.
-    Vergiss deswegen die Jagd heute aber nicht. Lass uns gegen Nachmittag hinter der
-    Kirche am Waldesrand treffen."
 --- !u!1 &300716507
 GameObject:
   m_ObjectHideFlags: 0
@@ -611,7 +636,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &497356024
 Transform:
   m_ObjectHideFlags: 0
@@ -673,8 +698,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questNumber: 3
   theQM: {fileID: 1738838645}
-  startText: Find Object
-  endText: You got the Object!
   isItemQuest: 1
   targetItem: Box
 --- !u!1 &634167470
@@ -829,8 +852,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questNumber: 2
   theQM: {fileID: 1738838645}
-  startText: 
-  endText: wazzup
   isItemQuest: 0
   targetItem: 
 --- !u!1 &748165765
@@ -882,6 +903,8 @@ MonoBehaviour:
   dBox: {fileID: 1495420351}
   dText: {fileID: 1173173788}
   dialogActive: 0
+  permissionSzene: 0100000000000000
+  szenenStelle: 0
   dialogLines:
   - 
   - 
@@ -905,8 +928,6 @@ GameObject:
   - 33: {fileID: 777742611}
   - 23: {fileID: 777742610}
   - 61: {fileID: 777742609}
-  - 114: {fileID: 777742613}
-  - 114: {fileID: 777742614}
   m_Layer: 0
   m_Name: Hartmut
   m_TagString: Untagged
@@ -920,10 +941,10 @@ BoxCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 777742608}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
@@ -974,56 +995,11 @@ Transform:
   m_LocalPosition: {x: 12.849999, y: -0.059999943, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
+  m_Children:
+  - {fileID: 1558851190}
+  - {fileID: 1465537172}
   m_Father: {fileID: 634167471}
   m_RootOrder: 1
---- !u!114 &777742613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 777742608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8a1b1f86712ea244943dd893f9d9b1a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: 
-  dialogueLines:
-  - "Heinrich: Sei gegr\xFC\xDFt, Hartmut."
-  - "Hartmut: Gr\xFC\xDF Gott, Herr Heinrich."
-  - 'Heinrich: Mir ist zu Ohren gekommen, dass du dich weigerst mir Steuern zu zahlen.
-    Ich hoffe, dem ist nicht wirklich so.'
-  - "Hartmut: Da haben Sie richtig geh\xF6rt, ich sehe es nicht ein, dass mein hart
-    erarbeitetes Geld f\xFCr Unsinn rausgeschleudert wird. Die Kirche wurde erst vor
-    20 Jahren erbaut. Wieso sollte sie jetzt schon ausgebaut werden? Vor allem wenn
-    doch die Br\xFCcke in den S\xFCden jetzt schon seit einem halben Jahr unpassierbar
-    ist?"
-  - 'Heinrich: Da hast du auch Recht. Das Problem dabei ist, dass ich dem Priester
-    letztes Jahr bereits versprochen habe, die Kirche endlich auszubauen.'
-  - "Heinrich: Ist denn die Br\xFCcke der einzige Grund, warum du keine Steuern zahlen
-    m\xF6chtest? Oder ist sie nur ein Vorwand um mich um meinen gerechten Anteil zu
-    betr\xFCgen?"
-  - "Hartmut: Es geht mir einzig und allein um die Br\xFCcke! Ich w\xFCrde es nicht
-    wagen, Sie aus purem Eigeninteresse zu hintergehen!"
-  - "Heinrich: Hrmph, na gut. Du hast mich \xFCberzeugt. Ich muss wohl versuchen den
-    Priester zu \xFCberreden, noch ein Jahr Geduld zu haben."
-  - 'Heinrich: Ich kann dir jedoch nichts versprechen. Sei dir gewiss, egal wie es
-    ausgeht, ich werde, was mir zusteht, auf die ein oder andere Art bekommen!'
---- !u!114 &777742614
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 777742608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e20b5ff0eb5018243a5903fd11a83752, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questNumber: 2
-  startQuest: 1
-  endQuest: 0
 --- !u!1 &851149360
 GameObject:
   m_ObjectHideFlags: 0
@@ -1035,8 +1011,6 @@ GameObject:
   - 33: {fileID: 851149363}
   - 23: {fileID: 851149362}
   - 61: {fileID: 851149361}
-  - 114: {fileID: 851149365}
-  - 114: {fileID: 851149366}
   m_Layer: 0
   m_Name: Priester
   m_TagString: Untagged
@@ -1050,10 +1024,10 @@ BoxCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 851149360}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
@@ -1104,15 +1078,47 @@ Transform:
   m_LocalPosition: {x: 18.720001, y: -0.059999943, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
+  m_Children:
+  - {fileID: 998965212}
+  - {fileID: 880211029}
   m_Father: {fileID: 634167471}
   m_RootOrder: 2
---- !u!114 &851149365
+--- !u!1 &880211028
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 880211029}
+  - 61: {fileID: 880211031}
+  - 114: {fileID: 880211030}
+  m_Layer: 0
+  m_Name: Szene3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &880211029
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 880211028}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 851149364}
+  m_RootOrder: 1
+--- !u!114 &880211030
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 851149360}
+  m_GameObject: {fileID: 880211028}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a8a1b1f86712ea244943dd893f9d9b1a, type: 3}
@@ -1120,40 +1126,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: 
   dialogueLines:
-  - "Heinrich: Sei gegr\xFC\xDFt, Priester."
-  - 'Priester: Gott sei mit Ihnen, mein Herr, was bringt Sie zu mir?'
-  - "Heinrich: Ich f\xFCrchte, ich habe schlechte Neuigkeiten. Ritter Hartmut weigert
-    sich seine Steuern zu zahlen. Ohne sein Geld habe ich nicht genug um die Kirche
-    auszubauen. Er m\xF6chte, dass das Geld genutzt wird, um die Br\xFCcke zu reparieren."
-  - 'Priester: Das sind durchaus schlechte Nachrichten.'
-  - "Heinrich: H\xE4tte ich letztes Jahr bereits gewusst, dass die Br\xFCcke besch\xE4digt
-    wird, h\xE4tte ich dir niemals versprochen die Kirche auszubauen. Aber ein Versprechen
-    ist ein Versprechen und ein Ritter ist nur so viel Wert wie sein Wort."
-  - 'Priester: Und ein Versprechen vor Gott ist nochmals so bedeutsam.'
-  - "Heinrich: Gibt es denn einen anderen Weg mein Versprechen doch noch einzuhalten?
-    Kann ich den Bau nicht einfach auf n\xE4chstes Jahr verschieben?"
-  - "Priester: Der neue Teil der Kirche war daf\xFCr vorgesehen den Armen und Hungernden
-    zu helfen. Ich kann sie nicht einfach ein weiteres Jahr ohne Obdach und zu wenig
-    Essen leiden lassen!"
-  - "Option 1: Was interessieren mich die Armen und Hungernden? Sie werden doch wie
-    bisher wohl noch bis zum n\xE4chsten Jahr \xFCberleben k\xF6nnen. Die Br\xFCcke
-    ist wichtiger!                                  Option 2: Ich werde mich darum
-    k\xFCmmern, dass bis n\xE4chstes Jahr, wenn der Bau stattfinden kann, niemand
-    Hunger leiden muss!"
---- !u!114 &851149366
-MonoBehaviour:
+  - 'Heinrich: Ich habe mein Bestes getan um den Armen zu helfen. Nun halte auch du
+    dein Versprechen ein, mir ein Jahr mehr Zeit zu geben um die Kirche zu auszubauen.'
+  - "Priester: Wohlan, Ihnen sei noch ein weiteres Jahr verg\xF6nnt, aber dann werde
+    ich mich nicht mehr umstimmen lassen!"
+  - "Heinrich: Ich danke dir. Bleibt nur zu hoffen, dass die Br\xFCcke diesen Winter
+    stehen bleibt."
+  idSzene: 3
+--- !u!61 &880211031
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 851149360}
+  m_GameObject: {fileID: 880211028}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e20b5ff0eb5018243a5903fd11a83752, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questNumber: 2
-  startQuest: 0
-  endQuest: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1 &963236168
 GameObject:
   m_ObjectHideFlags: 0
@@ -1168,7 +1161,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &963236169
 Transform:
   m_ObjectHideFlags: 0
@@ -1224,6 +1217,84 @@ Transform:
   m_PrefabParentObject: {fileID: 4000013444050904, guid: 6577e16887863a04197771d016bfbbb9,
     type: 2}
   m_PrefabInternal: {fileID: 964494162}
+--- !u!1 &998965211
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 998965212}
+  - 114: {fileID: 998965214}
+  - 61: {fileID: 998965213}
+  m_Layer: 0
+  m_Name: Szene2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &998965212
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 998965211}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 851149364}
+  m_RootOrder: 0
+--- !u!61 &998965213
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 998965211}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+--- !u!114 &998965214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 998965211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a1b1f86712ea244943dd893f9d9b1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: 
+  dialogueLines:
+  - "Heinrich: Sei gegr\xFC\xDFt, Priester."
+  - 'Priester: Gott sei mit Ihnen, mein Herr, was bringt Sie zu mir?'
+  - "Heinrich: Ich f\xFCrchte, ich habe schlechte Neuigkeiten. Ritter Hartmut weigert
+    sich seine Steuern zu zahlen. Ohne sein Geld habe ich nicht genug um die Kirche
+    auszubauen. Er m\xF6chte, dass das Geld genutzt wird, um die Br\xFCcke zu reparieren."
+  - 'Priester: Das sind durchaus schlechte Nachrichten.'
+  - "Heinrich: H\xE4tte ich letztes Jahr bereits gewusst, dass die Br\xFCcke besch\xE4digt
+    wird, h\xE4tte ich dir niemals versprochen die Kirche auszubauen. Aber ein Versprechen
+    ist ein Versprechen und ein Ritter ist nur so viel Wert wie sein Wort."
+  - 'Priester: Und ein Versprechen vor Gott ist nochmals so bedeutsam.'
+  - "Heinrich: Gibt es denn einen anderen Weg mein Versprechen doch noch einzuhalten?
+    Kann ich den Bau nicht einfach auf n\xE4chstes Jahr verschieben?"
+  - "Priester: Der neue Teil der Kirche war daf\xFCr vorgesehen den Armen und Hungernden
+    zu helfen. Ich kann sie nicht einfach ein weiteres Jahr ohne Obdach und zu wenig
+    Essen leiden lassen!"
+  - "Heinrich: Ich werde mich darum k\xFCmmern, dass bis n\xE4chstes Jahr, wenn der
+    Bau stattfinden kann, niemand Hunger leiden muss!"
+  - 'Priester: Ich wusste, dass sich das Volk auf Sie verlassen kann, Herr. Aber nun
+    lasst Worten auch Taten folgen.'
+  - 'Heinrich: Gewiss, ich werde wieder kommen, sobald ich den Armen geholfen habe.'
+  idSzene: 2
 --- !u!1 &1131919885
 GameObject:
   m_ObjectHideFlags: 0
@@ -1393,6 +1464,78 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1173173786}
+--- !u!1 &1274974693
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1274974694}
+  - 114: {fileID: 1274974695}
+  - 61: {fileID: 1274974696}
+  m_Layer: 0
+  m_Name: Szene0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1274974694
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1274974693}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 230295076}
+  m_RootOrder: 0
+--- !u!114 &1274974695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1274974693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a1b1f86712ea244943dd893f9d9b1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: 
+  dialogueLines:
+  - "Heinrich: Curt, was f\xFCr ein sch\xF6ner Tag. Ich sollte mich unters Volk mischen
+    und schauen, wie es um meine Untertanen bestellt ist."
+  - 'Curt: Eine gute Idee. Da du schon auf dem Weg bist, schau doch bei Ritter Hartmut
+    vorbei. Er hat sich erdreistet, dir deine gerechte Steuer vorzuenthalten.'
+  - "Heinrich: Was f\xE4llt ihm ein! Ich werde ein Wort mit ihm reden."
+  - "Curt: Ihm gef\xE4llt anscheinend nicht, dass du vorhast die Kirche auszubauen,
+    bevor die Br\xFCcke Richtung S\xFCden vollst\xE4ndig repariert wurde."
+  - 'Curt: Mir wurde berichtet, dass gestern ein hitziger Kampf zwischen Hartmut und
+    dem Dorfpriester entbrannt ist.'
+  - "Heinrich: Ich werde wohl mit den beiden reden m\xFCssen und einen Kompromiss
+    finden, damit wieder Ruhe in meinem Land herrschen kann."
+  - "Curt: Viel Erfolg dabei! Ich hab\u2019 selten zwei so sture Menschen getroffen.
+    Vergiss deswegen die Jagd heute aber nicht. Lass uns gegen Nachmittag hinter der
+    Kirche am Waldesrand treffen."
+  idSzene: 0
+--- !u!61 &1274974696
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1274974693}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1001 &1367698207
 Prefab:
   m_ObjectHideFlags: 0
@@ -1416,6 +1559,72 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6577e16887863a04197771d016bfbbb9, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1465537171
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1465537172}
+  - 114: {fileID: 1465537174}
+  - 61: {fileID: 1465537173}
+  m_Layer: 0
+  m_Name: Szene4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1465537172
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1465537171}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 777742612}
+  m_RootOrder: 1
+--- !u!61 &1465537173
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1465537171}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+--- !u!114 &1465537174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1465537171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a1b1f86712ea244943dd893f9d9b1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: 
+  dialogueLines:
+  - "Heinrich: Hartmut, ich bringe gute Neuigkeiten. Der Bau der Br\xFCcke wird noch
+    morgen beginnen k\xF6nnen. Ich werde dich pers\xF6nlich damit beauftragen, und
+    wehe dir, wenn du das Geld f\xFCr irgendetwas anderes verschleuderst."
+  - "Hartmut: Fantastisch! Ich verspreche, ich werde Sie nicht entt\xE4uschen, mein
+    Herr!"
+  - "Heinrich: Das hoffe ich sehr. Ich werde f\xFCr die n\xE4chsten Tage auf die Jagd
+    gehen. Wenn ich zur\xFCckkomme, steht die Br\xFCcke besser, oder es wird Konsequenzen
+    f\xFCr dich geben, Hartmut."
+  idSzene: 4
 --- !u!1 &1495420351
 GameObject:
   m_ObjectHideFlags: 0
@@ -1581,6 +1790,84 @@ Transform:
   m_Children: []
   m_Father: {fileID: 497356024}
   m_RootOrder: 0
+--- !u!1 &1558851189
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1558851190}
+  - 114: {fileID: 1558851192}
+  - 61: {fileID: 1558851191}
+  m_Layer: 0
+  m_Name: Szene1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1558851190
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1558851189}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 777742612}
+  m_RootOrder: 0
+--- !u!61 &1558851191
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1558851189}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+--- !u!114 &1558851192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1558851189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a1b1f86712ea244943dd893f9d9b1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: 
+  dialogueLines:
+  - "Heinrich: Sei gegr\xFC\xDFt, Hartmut."
+  - "Hartmut: Gr\xFC\xDF Gott, Herr Heinrich."
+  - 'Heinrich: Mir ist zu Ohren gekommen, dass du dich weigerst mir Steuern zu zahlen.
+    Ich hoffe, dem ist nicht wirklich so.'
+  - "Hartmut: Da haben Sie richtig geh\xF6rt, ich sehe es nicht ein, dass mein hart
+    erarbeitetes Geld f\xFCr Unsinn rausgeschleudert wird. Die Kirche wurde erst vor
+    20 Jahren erbaut. Wieso sollte sie jetzt schon ausgebaut werden? Vor allem wenn
+    doch die Br\xFCcke in den S\xFCden jetzt schon seit einem halben Jahr unpassierbar
+    ist?"
+  - 'Heinrich: Da hast du auch Recht. Das Problem dabei ist, dass ich dem Priester
+    letztes Jahr bereits versprochen habe, die Kirche endlich auszubauen.'
+  - "Heinrich: Ist denn die Br\xFCcke der einzige Grund, warum du keine Steuern zahlen
+    m\xF6chtest? Oder ist sie nur ein Vorwand um mich um meinen gerechten Anteil zu
+    betr\xFCgen?"
+  - "Hartmut: Es geht mir einzig und allein um die Br\xFCcke! Ich w\xFCrde es nicht
+    wagen, Sie aus purem Eigeninteresse zu hintergehen!"
+  - "Heinrich: Hrmph, na gut. Du hast mich \xFCberzeugt. Ich muss wohl versuchen den
+    Priester zu \xFCberreden, noch ein Jahr Geduld zu haben."
+  - 'Heinrich: Ich kann dir jedoch nichts versprechen. Sei dir gewiss, egal wie es
+    ausgeht, ich werde, was mir zusteht, auf die ein oder andere Art bekommen!'
+  idSzene: 1
 --- !u!1 &1570016674
 GameObject:
   m_ObjectHideFlags: 0
@@ -1700,7 +1987,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1738838644
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1790,8 +2077,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questNumber: 0
   theQM: {fileID: 1738838645}
-  startText: 
-  endText: 
   isItemQuest: 0
   targetItem: 
 --- !u!1 &1850953021
@@ -1852,6 +2137,132 @@ Transform:
   m_Children: []
   m_Father: {fileID: 963236169}
   m_RootOrder: 1
+--- !u!1 &1883860173
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1883860174}
+  - 61: {fileID: 1883860176}
+  - 114: {fileID: 1883860175}
+  m_Layer: 0
+  m_Name: Szene6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1883860174
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1883860173}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 230295076}
+  m_RootOrder: 2
+--- !u!114 &1883860175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1883860173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a1b1f86712ea244943dd893f9d9b1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: 
+  dialogueLines:
+  - "Heinrich: Was ist das f\xFCr ein Teufelswerk? Curt! CURT!!! Wo ist er nur?"
+  - "???: Heinrich, ein Versprechen vor Gott ist ein Versprechen vor Gott. Du h\xE4ttest
+    deins nicht brechen d\xFCrfen! So wandle nun als Ausgesto\xDFener durch die Gesellschaft,
+    die du mir vorgezogen hast!"
+  - 'Heinrich: Was? Ich bin mir keiner Schuld bewusst! Weiche hinfort, Teufel!!!'
+  idSzene: 6
+--- !u!61 &1883860176
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1883860173}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+--- !u!1 &1939792580
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1939792581}
+  - 61: {fileID: 1939792583}
+  - 114: {fileID: 1939792582}
+  m_Layer: 0
+  m_Name: Szene5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1939792581
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1939792580}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 230295076}
+  m_RootOrder: 1
+--- !u!114 &1939792582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1939792580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a1b1f86712ea244943dd893f9d9b1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: 
+  dialogueLines:
+  - "Curt: Ich habe geh\xF6rt, du hast es tats\xE4chlich geschafft den Streit zu schlichten!
+    Das h\xE4tte ich nicht erwartet, Cousin."
+  - 'Heinrich: Es hat mich zwar einiges an Geld gekostet, aber die Hauptsache ist,
+    dass jeder zufrieden ist und wieder Ruhe im Dorf herrscht.'
+  - 'Curt: Dann ist ja alles wieder gut. Lass uns eine erfolgreiche Jagd haben.'
+  idSzene: 5
+--- !u!61 &1939792583
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1939792580}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!4 &2025702164 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000013444050904, guid: 6577e16887863a04197771d016bfbbb9,
@@ -1904,7 +2315,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questNumber: 1
   theQM: {fileID: 1738838645}
-  startText: 
-  endText: 
   isItemQuest: 0
   targetItem: 

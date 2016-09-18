@@ -7,8 +7,8 @@ public class QuestObject : MonoBehaviour {
 
     public QuestManager theQM;
 
-    public string startText;
-    public string endText;
+    //public string startText;
+    //public string endText;
 
     public bool isItemQuest;
     public string targetItem;
@@ -34,12 +34,12 @@ public class QuestObject : MonoBehaviour {
     public void StartQuest()
     {   
 
-        theQM.ShowQuestText(startText);        
+        //theQM.ShowQuestText(startText);        
     }
 
     public void EndQuest()
     {
-        theQM.ShowQuestText(endText);
+        //theQM.ShowQuestText(endText);
         theQM.anzahlCompleted++;
         theQM.questCompleted[questNumber] = true;
         gameObject.SetActive(false);

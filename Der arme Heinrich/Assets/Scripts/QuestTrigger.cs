@@ -31,6 +31,7 @@ public class QuestTrigger : MonoBehaviour {
                 if(startQuest && !theQM.quests[questNumber].gameObject.activeSelf)
                 {
                     theQM.quests[questNumber].gameObject.SetActive(true);
+
                     theQM.quests[questNumber].StartQuest();
                 }
 
