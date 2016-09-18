@@ -101,7 +101,7 @@ GameObject:
   - 61: {fileID: 36853018}
   - 114: {fileID: 36853017}
   m_Layer: 0
-  m_Name: Szene7
+  m_Name: Akt1_Szene7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: 
   dialogueLines:
-  - 'Curt: "Was ist geschehen? Wieso siehst du so schlecht aus, Heinrich?'
+  - 'Curt: Was ist geschehen? Wieso siehst du so schlecht aus, Heinrich?'
   - 'Heinrich: Mein Gott, wieso hast du mich verlassen!'
   - 'Curt: Beruhige dich doch.'
   - 'Heinrich: Ich wurde von Gott gestraft, Curt. Er hat mich mit dem Aussatz belegt.'
@@ -153,7 +153,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2, y: 1}
 --- !u!1 &36945777
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,6 +216,77 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!1 &105289809
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 105289810}
+  - 33: {fileID: 105289812}
+  - 23: {fileID: 105289811}
+  m_Layer: 0
+  m_Name: Agnes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &105289810
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 105289809}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -26.392, y: -0.089999914, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 729098349}
+  - {fileID: 1855160967}
+  - {fileID: 1252374525}
+  - {fileID: 1327585667}
+  - {fileID: 1680503660}
+  m_Father: {fileID: 634167471}
+  m_RootOrder: 6
+--- !u!23 &105289811
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 105289809}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedWireframeHidden: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &105289812
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 105289809}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &161981835
 GameObject:
   m_ObjectHideFlags: 0
@@ -342,7 +413,7 @@ GameObject:
   - 23: {fileID: 230295074}
   - 61: {fileID: 230295073}
   m_Layer: 0
-  m_Name: Cnut
+  m_Name: Curt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -413,8 +484,75 @@ Transform:
   - {fileID: 1939792581}
   - {fileID: 1883860174}
   - {fileID: 36853016}
+  - {fileID: 806111938}
   m_Father: {fileID: 634167471}
   m_RootOrder: 0
+--- !u!1 &298138274
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 298138275}
+  - 114: {fileID: 298138277}
+  - 61: {fileID: 298138276}
+  m_Layer: 0
+  m_Name: Akt2_Szene2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &298138275
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 298138274}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.04, y: -0.120000124, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1244634853}
+  m_RootOrder: 0
+--- !u!61 &298138276
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 298138274}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1}
+--- !u!114 &298138277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 298138274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a1b1f86712ea244943dd893f9d9b1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: 
+  dialogueLines:
+  - "Bed\xFCrftiger 1: Herr Heinrich! Welche Ehre, dass Sie bei mir Halt machen. Wie
+    komme ich zu dieser Ehre?"
+  - "Heinrich: Ich m\xF6chte meinen Besitz an die Bed\xFCrftigen verteilen. Ich wurde
+    mit Aussatz bestraft und bin nicht zuversichtlich, dass es eine Heilung gibt."
+  - "Bed\xFCrftiger 1: Mein Herr, eine Heilung kenne ich nicht. \xDCber den Besitz
+    freue ich mich allerdings. Gehen Sie weiter ins Dorf, eventuell kann Ihnen jemand
+    helfen."
+  - 'Heinrich: Gott sei mit dir. Ich werde voranschreiten.'
+  idSzene: 9
 --- !u!1 &300716507
 GameObject:
   m_ObjectHideFlags: 0
@@ -502,6 +640,152 @@ Transform:
   m_Children: []
   m_Father: {fileID: 161981841}
   m_RootOrder: 0
+--- !u!1 &355599996
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 355599997}
+  - 114: {fileID: 355599999}
+  - 61: {fileID: 355599998}
+  m_Layer: 0
+  m_Name: Akt3_Szene4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &355599997
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 355599996}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.041999817, y: -0.23900008, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 359022225}
+  m_RootOrder: 0
+--- !u!61 &355599998
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 355599996}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1}
+--- !u!114 &355599999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 355599996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a1b1f86712ea244943dd893f9d9b1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: 
+  dialogueLines:
+  - 'Agnes: Vater, ein Reisender ist vorbeigekommen.'
+  - "Meier: Gr\xFC\xDF Gott, wie kann ich Ihnen behilflich sein?"
+  - "Reisender: Ich habe von dem armen Heinrich geh\xF6rt. Er wolle das Ende der Sage
+    kennen."
+  - "Heinrich: Im Dorf wurde mir gesagt, jeder erz\xE4hle ein anderes Ende."
+  - 'Reisender: Mein Ende stimmt aber.'
+  - 'Heinrich: Fahren Sie fort.'
+  - 'Reisender: Es ist sehr brutal, aber es verspricht Heilung.'
+  - 'Heinrich: Spannen Sie mich nicht auf die Folter.'
+  - "Reisender: Kurz gefasst: Sie brauchen das Blut einer jungfr\xE4ulichen, selbstlosen
+    Frau."
+  - "Heinrich: Das kann doch nicht Ihr Ernst sein! Gibt es keine andere M\xF6glichkeit?"
+  - "Reisender: Leider nein. Sollten Sie sich f\xFCr meinen Weg entscheiden, m\xFCssen
+    Sie beachten, dass die Frau jungfr\xE4ulich ist und sich von selbst aus opfern
+    m\xF6chte."
+  - 'Heinrich: Was passiert sonst?'
+  - "Reisender: Sie werden nicht geheilt und die Frau ist umsonst so fr\xFCh verstorben."
+  - "Heinrich: Aber zu wem k\xF6nnte ich denn gehen, damit er das Blut einer Frau
+    entnimmt?"
+  - 'Reisender: Gehen Sie zum Heiler nach Salerno. Er wird Ihnen helfen.'
+  - "Heinrich: In Ordnung. Ich bedanke mich bei Ihnen. M\xF6ge Gott mit Ihnen sein."
+  idSzene: 15
+--- !u!1 &359022224
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 359022225}
+  - 33: {fileID: 359022227}
+  - 23: {fileID: 359022226}
+  m_Layer: 0
+  m_Name: Reisender
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &359022225
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 359022224}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -31.74, y: -0.089999914, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 355599997}
+  m_Father: {fileID: 634167471}
+  m_RootOrder: 7
+--- !u!23 &359022226
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 359022224}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedWireframeHidden: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &359022227
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 359022224}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &385559510
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,6 +935,73 @@ Transform:
   - {fileID: 1537583560}
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!1 &499918298
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 499918299}
+  - 33: {fileID: 499918301}
+  - 23: {fileID: 499918300}
+  m_Layer: 0
+  m_Name: "Bed\xFCrftiger2"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &499918299
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 499918298}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -16.68, y: -0.089999914, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 796570741}
+  m_Father: {fileID: 634167471}
+  m_RootOrder: 4
+--- !u!23 &499918300
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 499918298}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedWireframeHidden: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &499918301
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 499918298}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &531863873
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,6 +1080,11 @@ Transform:
   - {fileID: 230295076}
   - {fileID: 777742612}
   - {fileID: 851149364}
+  - {fileID: 1244634853}
+  - {fileID: 499918299}
+  - {fileID: 768532458}
+  - {fileID: 105289810}
+  - {fileID: 359022225}
   m_Father: {fileID: 0}
   m_RootOrder: 7
 --- !u!1 &655384699
@@ -854,6 +1210,73 @@ MonoBehaviour:
   theQM: {fileID: 1738838645}
   isItemQuest: 0
   targetItem: 
+--- !u!1 &729098348
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 729098349}
+  - 114: {fileID: 729098351}
+  - 61: {fileID: 729098350}
+  m_Layer: 0
+  m_Name: Akt3_Szene1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &729098349
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 729098348}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.042, y: -0.239, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 105289810}
+  m_RootOrder: 0
+--- !u!61 &729098350
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 729098348}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1}
+--- !u!114 &729098351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 729098348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a1b1f86712ea244943dd893f9d9b1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: 
+  dialogueLines:
+  - "Meier: Herr Heinrich, seien Sie gegr\xFC\xDFt von mir und meiner Familie. Das
+    hier ist meine Frau und das meine Tochter Agnes."
+  - "Heinrich: Seid gegr\xFC\xDFt. Bitte wendet euch nicht von mir ab. Ich wurde vor
+    einiger Zeit mit Aussatz bestraft."
+  - "Meier: Ich habe ihnen bereits davon erz\xE4hlt."
+  - 'Agnes: Aber warum wurden Sie bestraft? Von wem?'
+  - "Heinrich: Vom lieben Gott. Es war aber nicht meine Schuld. Ich wollte doch nur
+    das Beste f\xFCr jeden."
+  - "Agnes: Das m\xFCssen Sie uns nicht sagen. Das ist im ganzen Dorf bekannt."
+  idSzene: 12
 --- !u!1 &748165765
 GameObject:
   m_ObjectHideFlags: 0
@@ -903,7 +1326,7 @@ MonoBehaviour:
   dBox: {fileID: 1495420351}
   dText: {fileID: 1173173788}
   dialogActive: 0
-  permissionSzene: 0100000000000000
+  permissionSzene: 0100000000000000000000000000000000000000
   szenenStelle: 0
   dialogLines:
   - 
@@ -917,6 +1340,73 @@ MonoBehaviour:
   - 
   - 
   currentLine: 0
+--- !u!1 &768532457
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 768532458}
+  - 33: {fileID: 768532460}
+  - 23: {fileID: 768532459}
+  m_Layer: 0
+  m_Name: Meier
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &768532458
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 768532457}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -22.77, y: -0.089999914, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 1389091289}
+  m_Father: {fileID: 634167471}
+  m_RootOrder: 5
+--- !u!23 &768532459
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 768532457}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedWireframeHidden: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &768532460
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 768532457}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &777742608
 GameObject:
   m_ObjectHideFlags: 0
@@ -1000,6 +1490,144 @@ Transform:
   - {fileID: 1465537172}
   m_Father: {fileID: 634167471}
   m_RootOrder: 1
+--- !u!1 &796570740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 796570741}
+  - 114: {fileID: 796570743}
+  - 61: {fileID: 796570742}
+  m_Layer: 0
+  m_Name: Akt2_Szene3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &796570741
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 796570740}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.01, y: -0.120000124, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 499918299}
+  m_RootOrder: 0
+--- !u!61 &796570742
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 796570740}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1}
+--- !u!114 &796570743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 796570740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a1b1f86712ea244943dd893f9d9b1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: 
+  dialogueLines:
+  - "Bed\xFCrftiger 2: Gr\xFC\xDF Gott, Herr Heinrich! Ich habe geh\xF6rt, dass Sie
+    Ihren Besitz verschenken."
+  - "Heinrich: Du hast richtig geh\xF6rt. Auch du wirst etwas davon bekommen. Kennst
+    du oder jemand im Dorf eine Heilung gegen Aussatz?"
+  - "Bed\xFCrftiger 2: Leider nein, gewiss kenne ich aber jemanden, der Ihnen helfen
+    k\xF6nnte. Gehen Sie weiter ins Dorf und fragen Sie nach dem Meier."
+  - "Curt: Wird er meinem Cousin helfen k\xF6nnen?"
+  - "Bed\xFCrftiger 2: Das wei\xDF ich nicht. Es gibt eine alte Sage \xFCber Aussatz.
+    Auch damals hatte ein wohlhabender und angesehener Mann wie Sie Aussatz."
+  - 'Heinrich: Wie wurde ihm denn geholfen?'
+  - "Bed\xFCrftiger 2: Das Ende der Sage wird von jedem anders erz\xE4hlt. Am besten
+    gehen Sie zum Meier, mein Herr, er kennt gewiss das Ende."
+  idSzene: 10
+--- !u!1 &806111937
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 806111938}
+  - 114: {fileID: 806111940}
+  - 61: {fileID: 806111939}
+  m_Layer: 0
+  m_Name: Akt2_Szene1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &806111938
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 806111937}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 230295076}
+  m_RootOrder: 4
+--- !u!61 &806111939
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 806111937}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1}
+--- !u!114 &806111940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 806111937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a1b1f86712ea244943dd893f9d9b1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: 
+  dialogueLines:
+  - 'Curt: Cousin, was hast du nun vor?'
+  - "Heinrich: Ich bin durch die Bestrafung einer unheilbaren Krankheit wertlos. Was
+    mich neben meiner Pers\xF6nlichkeit am meisten ausgezeichnet hat, war mein Besitz."
+  - 'Curt: Warum schauen uns die Menschen denn so komisch an?'
+  - 'Heinrich: Sieh mich doch an. Ich ekel mich doch selbst.'
+  - "Curt: Aber was k\xF6nnen wir denn dagegen tun, Cousin?"
+  - 'Heinrich: Solange es mir noch gut geht, werde ich nun meinen Besitz verteilen.'
+  - 'Curt: Aber an wen? Niemand kann sich so etwas leisten!'
+  - "Heinrich: Denke nicht so von mir. Ich werde meinen Besitz gerecht an die Bed\xFCrftigen
+    verschenken."
+  idSzene: 8
 --- !u!1 &851149360
 GameObject:
   m_ObjectHideFlags: 0
@@ -1094,7 +1722,7 @@ GameObject:
   - 61: {fileID: 880211031}
   - 114: {fileID: 880211030}
   m_Layer: 0
-  m_Name: Szene3
+  m_Name: Akt1_Szene3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1146,7 +1774,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2, y: 1}
 --- !u!1 &963236168
 GameObject:
   m_ObjectHideFlags: 0
@@ -1228,7 +1856,7 @@ GameObject:
   - 114: {fileID: 998965214}
   - 61: {fileID: 998965213}
   m_Layer: 0
-  m_Name: Szene2
+  m_Name: Akt1_Szene2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1260,7 +1888,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2, y: 1}
 --- !u!114 &998965214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1464,6 +2092,137 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1173173786}
+--- !u!1 &1244634852
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1244634853}
+  - 33: {fileID: 1244634855}
+  - 23: {fileID: 1244634854}
+  m_Layer: 0
+  m_Name: "Bed\xFCrftiger1"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1244634853
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1244634852}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -12.09, y: -0.089999914, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 298138275}
+  m_Father: {fileID: 634167471}
+  m_RootOrder: 3
+--- !u!23 &1244634854
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1244634852}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedWireframeHidden: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &1244634855
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1244634852}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1252374524
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1252374525}
+  - 114: {fileID: 1252374527}
+  - 61: {fileID: 1252374526}
+  m_Layer: 0
+  m_Name: Akt3_Szene3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1252374525
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1252374524}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.041999817, y: -0.23900008, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 105289810}
+  m_RootOrder: 2
+--- !u!61 &1252374526
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1252374524}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1}
+--- !u!114 &1252374527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1252374524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a1b1f86712ea244943dd893f9d9b1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: 
+  dialogueLines:
+  - 'Heinrich: Ich hoffe, dir ist bewusst geworden, wie sehr du mir am Herzen liegst.'
+  - "Agnes: Du mir auch. Ich m\xF6chte den Rest meiner Zeit mit dir verbringen."
+  - "Heinrich: Oh, Agnes. Das kann ich nur zur\xFCckgeben. Aber solange es keine Heilung
+    f\xFCr mich gibt, wird die gemeinsame Zeit sehr kurz sein."
+  - "Agnes: Ich w\xFCrde dir gerne helfen. Aber auch ich wei\xDF das Ende der Sage
+    nicht. Es blieb mir immer verschwiegen."
+  idSzene: 14
 --- !u!1 &1274974693
 GameObject:
   m_ObjectHideFlags: 0
@@ -1475,7 +2234,7 @@ GameObject:
   - 114: {fileID: 1274974695}
   - 61: {fileID: 1274974696}
   m_Layer: 0
-  m_Name: Szene0
+  m_Name: Akt1_Szene0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1535,7 +2294,75 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2, y: 1}
+--- !u!1 &1327585666
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1327585667}
+  - 114: {fileID: 1327585669}
+  - 61: {fileID: 1327585668}
+  m_Layer: 0
+  m_Name: Akt3_Szene5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1327585667
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1327585666}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.041999817, y: -0.23900008, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 105289810}
+  m_RootOrder: 3
+--- !u!61 &1327585668
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1327585666}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1}
+--- !u!114 &1327585669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1327585666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a1b1f86712ea244943dd893f9d9b1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: 
+  dialogueLines:
+  - "Heinrich: Ich wei\xDF nicht, wie ich eine so selbstlose Jungfrau finden soll."
+  - "Agnes: Ich kann mich f\xFCr dich opfern."
+  - 'Mutter: Das kommt auf gar keinen Fall in Frage. Du handelst nicht selbstlos,
+    sondern aus Liebe! Das ist nur Mitleid!'
+  - "Agnes: Mutter, ich habe schon lange \xFCberlegt, wie ich meinem Heinrich helfen
+    kann. Das w\xE4re die optimalste L\xF6sung."
+  - "Mutter: Und was erhoffst du dir dadurch? Wie k\xF6nnten wir nur ohne dich weiterleben?"
+  - "Agnes: Mutter, ihr h\xE4ttet so noch das Grundst\xFCck, auf dem ihr lebt, speist
+    und trinkt. Auf mich k\xF6nnt ihr auch verzichten. F\xFCr mich steht die Entscheidung
+    fest."
+  idSzene: 16
 --- !u!1001 &1367698207
 Prefab:
   m_ObjectHideFlags: 0
@@ -1559,6 +2386,79 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6577e16887863a04197771d016bfbbb9, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1389091288
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1389091289}
+  - 114: {fileID: 1389091291}
+  - 61: {fileID: 1389091290}
+  m_Layer: 0
+  m_Name: Akt2_Szene4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1389091289
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1389091288}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.02, y: -0.120000124, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 768532458}
+  m_RootOrder: 0
+--- !u!61 &1389091290
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1389091288}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1}
+--- !u!114 &1389091291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1389091288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a1b1f86712ea244943dd893f9d9b1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: 
+  dialogueLines:
+  - 'Heinrich: Entschuldigung, bist du der Meier?'
+  - 'Meier: So wahr ich hier stehe, Herr Heinrich. Sie sehen ziemlich schlecht aus.
+    Was ist Ihnen widerfahren?'
+  - 'Curt: Mein Cousin wurde von Gott mit Aussatz bestraft. Schau ihn dir nur an.'
+  - 'Heinrich: Mir geht es elendig.'
+  - "Curt: Lieber Meier, gibt es denn keine Heilung f\xFCr ihn? Man sprach im Dorf
+    von einer alten Sage."
+  - 'Meier: Doch, die gibt es. Auch das mit der Sage ist wahr.'
+  - "Heinrich: W\xE4re es m\xF6glich, bei dir unterzukommen? Ich f\xFChle mich kraftlos."
+  - "Meier: Haben Sie keine Grundst\xFCcke, auf denen Sie sich ausruhen k\xF6nnen,
+    ohne dass man Sie verspottet?"
+  - 'Heinrich: Nein, ich habe alles verschenkt. Ich bin nun befreit von der materiellen
+    Last, aber nicht von der geistigen.'
+  - "Meier: Wenn dem wirklich so ist, k\xF6nnen Sie gerne bei mir unterkommen. Dort
+    erz\xE4hle ich Ihnen auch etwas \xFCber die Sage."
+  idSzene: 11
 --- !u!1 &1465537171
 GameObject:
   m_ObjectHideFlags: 0
@@ -1570,7 +2470,7 @@ GameObject:
   - 114: {fileID: 1465537174}
   - 61: {fileID: 1465537173}
   m_Layer: 0
-  m_Name: Szene4
+  m_Name: Akt1_Szene4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1602,7 +2502,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2, y: 1}
 --- !u!114 &1465537174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1801,7 +2701,7 @@ GameObject:
   - 114: {fileID: 1558851192}
   - 61: {fileID: 1558851191}
   m_Layer: 0
-  m_Name: Szene1
+  m_Name: Akt1_Szene1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1833,7 +2733,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2, y: 1}
 --- !u!114 &1558851192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1972,6 +2872,77 @@ Transform:
   - {fileID: 964494163}
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!1 &1680503659
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1680503660}
+  - 114: {fileID: 1680503662}
+  - 61: {fileID: 1680503661}
+  m_Layer: 0
+  m_Name: Akt3_Szene6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1680503660
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1680503659}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.041999817, y: -0.23900008, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 105289810}
+  m_RootOrder: 4
+--- !u!61 &1680503661
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1680503659}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1}
+--- !u!114 &1680503662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1680503659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a1b1f86712ea244943dd893f9d9b1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: 
+  dialogueLines:
+  - "Heinrich: Gr\xFC\xDF Gott. Mir wurde erz\xE4hlt, dass Sie mich vom Aussatz befreien
+    k\xF6nnen."
+  - "Heiler: Herr Heinrich! Da haben Sie richtig geh\xF6rt. Ich nehme an, die junge
+    Frau neben Ihnen m\xF6chte sich f\xFCr Sie opfern?"
+  - 'Heinrich: Das ist wahrhaft so.'
+  - "Heiler: Ich m\xF6chte das bitte aus ihrem Mund h\xF6ren."
+  - "Agnes: Mein Heinrich hat recht. Ich m\xF6chte mich f\xFCr ihn opfern. Ich wei\xDF,
+    dass es naiv klingt. Aber wir werden uns sp\xE4testens wieder im Himmel sehen."
+  - "Heiler: Ich habe noch nie eine so selbstlose, junge Frau geh\xF6rt. Wenn das
+    wirklich dein Wunsch ist, geopfert zu werden..."
+  - "Agnes: Ja! F\xFCr meinen Heinrich!"
+  - "Heiler: ...dann soll dies geschehen. Daf\xFCr m\xFCssen wir ins Behandlungszimmer.
+    Du musst daf\xFCr nackt sein. Herr Heinrich, Sie m\xFCssen im Nebenraum warten."
+  idSzene: 17
 --- !u!1 &1738838643
 GameObject:
   m_ObjectHideFlags: 0
@@ -2137,6 +3108,76 @@ Transform:
   m_Children: []
   m_Father: {fileID: 963236169}
   m_RootOrder: 1
+--- !u!1 &1855160966
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1855160967}
+  - 114: {fileID: 1855160969}
+  - 61: {fileID: 1855160968}
+  m_Layer: 0
+  m_Name: Akt3_Szene2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1855160967
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1855160966}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.041999817, y: -0.23900008, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 105289810}
+  m_RootOrder: 1
+--- !u!61 &1855160968
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1855160966}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1}
+--- !u!114 &1855160969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1855160966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a1b1f86712ea244943dd893f9d9b1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: 
+  dialogueLines:
+  - "Agnes: Herr Heinrich, wie f\xFChlen Sie sich?"
+  - "Heinrich: Es wird immer schlimmer. Fr\xFCher dachte ich, der Verlust meines Besitzes
+    wird mich hart treffen. Aber die Krankheit ist viel schlimmer."
+  - "Agnes: Ich w\xFCrde Ihnen gerne helfen. Aber ich wei\xDF nicht, wie."
+  - "Heinrich: Im Dorf erz\xE4hlte man mir, dein Vater kenne das Ende der Sage."
+  - "Agnes: Das w\xE4re mir neu."
+  - "Heinrich: Lass uns aber nicht mehr \xFCber mich sprechen. Ich habe dir als Dank,
+    dass dein Vater mich bei euch beh\xE4lt, Geschenke mitgebracht."
+  - "Agnes: Aber Herr Heinrich, Sie haben doch kaum noch etwas. Das m\xFCssen Sie
+    doch nicht f\xFCr mich ausgeben!"
+  - 'Heinrich: Ich werde auf ewig in eurer Schuld stehen. Komm mit, dann kannst du
+    dir deine Geschenke suchen.'
+  idSzene: 13
 --- !u!1 &1883860173
 GameObject:
   m_ObjectHideFlags: 0
@@ -2148,7 +3189,7 @@ GameObject:
   - 61: {fileID: 1883860176}
   - 114: {fileID: 1883860175}
   m_Layer: 0
-  m_Name: Szene6
+  m_Name: Akt1_Szene6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2199,7 +3240,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2, y: 1}
 --- !u!1 &1939792580
 GameObject:
   m_ObjectHideFlags: 0
@@ -2211,7 +3252,7 @@ GameObject:
   - 61: {fileID: 1939792583}
   - 114: {fileID: 1939792582}
   m_Layer: 0
-  m_Name: Szene5
+  m_Name: Akt1_Szene5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2262,7 +3303,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2, y: 1}
 --- !u!4 &2025702164 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000013444050904, guid: 6577e16887863a04197771d016bfbbb9,
