@@ -11,6 +11,7 @@ public class DialogManager : MonoBehaviour {
     public bool dialogActive;
 
     public bool[] permissionSzene;
+    public bool[] erforderlicheQuest;
     public int szenenStelle;
 
     public string[] dialogLines;

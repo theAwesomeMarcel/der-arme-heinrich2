@@ -3,6 +3,8 @@ using System.Collections;
 
 public class QuestItem : MonoBehaviour {
 
+    public Texture item;
+
     public int questNumber;
 
     private QuestManager theQM;
@@ -12,22 +14,27 @@ public class QuestItem : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         theQM = FindObjectOfType<QuestManager>();
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
 	
 	}
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerStay2D(Collider2D other)
     {
-        if(other.gameObject.name == "Player")
+        if (other.gameObject.name == "Player" && Input.GetKeyDown(KeyCode.Space))
         {
-            if(!theQM.questCompleted[questNumber] && theQM.quests[questNumber].gameObject.activeSelf)
-            {
-                theQM.itemCollected = itemName;
-                gameObject.SetActive(false);
-            }
+            
+                if (!theQM.questCompleted[questNumber] && theQM.quests[questNumber].gameObject.activeSelf)
+                {
+                    theQM.itemCollected = itemName;
+                    theQM.questCompleted[questNumber] = true;
+                    gameObject.SetActive(false);
+                }
+            
         }
     }
+
+
 }
