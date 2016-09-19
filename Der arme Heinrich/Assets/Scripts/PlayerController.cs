@@ -10,6 +10,11 @@ public class PlayerController : MonoBehaviour
     public bool canMove;
     private DialogManager theDM;
 
+    public Sprite armerHeinrich;
+    public Sprite heinrichUndAgnes;
+    private bool spriteChanged;
+    private bool spriteChanged1;
+
 
     void Start()
     {
@@ -17,9 +22,29 @@ public class PlayerController : MonoBehaviour
         theDM = FindObjectOfType<DialogManager>();
 
         canMove = true;
+        spriteChanged = false;
+        spriteChanged1 = false;
     }
 
-  
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Sprite Changer" && spriteChanged == false)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = armerHeinrich;
+            spriteChanged = true;
+            moveSpeed = moveSpeed / 2;
+        }
+
+        if (other.tag == "Sprite Changer 1" && spriteChanged1 == false)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = heinrichUndAgnes;
+            spriteChanged1 = true;
+            moveSpeed = moveSpeed * 2;
+        }
+    }
+
+
     void FixedUpdate() {
 
         if(!theDM.dialogActive)

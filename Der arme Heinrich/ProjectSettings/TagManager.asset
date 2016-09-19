@@ -5,7 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Pick Up
-  - Pick Up 1
+  - Sprite Changer
+  - Sprite Changer 1
   layers:
   - Default
   - TransparentFX
