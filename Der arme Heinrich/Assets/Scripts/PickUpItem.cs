@@ -33,7 +33,7 @@ public class PickUpItem : MonoBehaviour
     void OnTriggerExit2D(Collider2D other)
     {
         pickUpText.text = "";
-        overPickUp = true;
+        overPickUp = false;
     }
 
     void Update()

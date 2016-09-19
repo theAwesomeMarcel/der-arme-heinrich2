@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class PickUpItem1 : MonoBehaviour
+public class PickUpItem3 : MonoBehaviour
 {
 
     public Text pickUpText;
@@ -50,7 +50,7 @@ public class PickUpItem1 : MonoBehaviour
     {
         if (pickedUp == true)
         {
-            GUI.DrawTexture(new Rect(70, 10, 50, 50), item);
+            GUI.DrawTexture(new Rect(200, 10, 50, 50), item);
         }
     }
 }
