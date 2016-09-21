@@ -38,14 +38,14 @@ public class dialogHolder : MonoBehaviour {
         }
 
 
-        if (dMan.szenenStelle == 9)
+        if (dMan.szenenStelle == 7)
         {
             theQM.quests[3].gameObject.SetActive(true);
             theQM.quests[4].gameObject.SetActive(true);
 
             if (theQM.questCompleted[3] && theQM.questCompleted[4])
             {
-                dMan.erforderlicheQuest[9] = true;
+                dMan.erforderlicheQuest[7] = true;
             }
         }
 
